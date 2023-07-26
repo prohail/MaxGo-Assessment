@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Poppins", "Roboto", sans-serif;
+  --background-color: rgb(0, 4, 15);
+  --margin-inline: 135px;
+  --gradient-color: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  --background-gradient-color: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --logo-color: #424147;
+  --subtext-color: #ffffffb2;
+}
+
+body {
+  background: var(--background-color);
+
+  font-family: var(--font-family);
+  list-style: none;
+}
+
+.container {
+  max-width: 1770px;
+  margin-inline: auto;
+}
+
+.primary-button {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  height: 64px;
+  width: 170px;
+  border-radius: 10px;
+  color: #00040e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-button:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1380px) {
+  :root {
+    --margin-inline: 100px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  :root {
+    --margin-inline: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --margin-inline: 60px;
+  }
+}
+
+@media screen and (max-width: 969px) {
+  :root {
+    --margin-inline: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  :root {
+    --margin-inline: 20px;
+  }
+}
+
+/* H1 and P media query */
+
+@media screen and (max-width: 1269px) {
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 1017px) {
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 64px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+}
